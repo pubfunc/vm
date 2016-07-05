@@ -1,9 +1,9 @@
 ---
 ip: "192.168.10.19"
-memory: 2048
+memory: 1024
 cpus: 1
-hostname: yousemble
-name: yousemble
+hostname: pubfuncVM
+name: pubfuncVM
 provider: virtualbox
 
 authorize: ~/.ssh/id_rsa.pub
@@ -12,15 +12,18 @@ keys:
     - ~/.ssh/id_rsa
 
 folders:
-    - map: D:\dev\yousemble
-      to: /home/vagrant/yousemble
+    - map: D:\dev\elementree
+      to: /home/vagrant/elementree
+    - map: D:\dev\pubfunc
+      to: /home/vagrant/pubfunc
 
-sites: {}
-#     - map: api.yousemble.co
-#       to: /home/vagrant/dev/yousemble/api/public
+sites:
+    - map: provar.dev
+      to: /home/vagrant/elementree/provar/api/public
 
 databases:
     - homestead
+    - provar
 #    - yousemble_api
 
 # variables:

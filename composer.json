@@ -1,18 +1,12 @@
 {
-    "name": "yousemble/vagrant",
+    "name": "pubfunc/vm",
     "authors": [
         {
             "name": "Christiaan Lombard",
             "email": "christiaan.lombard@yousemble.com"
         }
     ],
-    "repositories": [
-      {
-        "type": "vcs",
-        "url": "https://github.com/yousemble/homestead"
-      }
-    ],
     "require": {
-      "laravel/homestead": "dev-ysfork2.0"
+        "laravel/homestead": "^3.0"
     }
 }
