@@ -20,10 +20,13 @@ folders:
 sites:
     - map: provar.dev
       to: /home/vagrant/elementree/provar/api/public
+    - map: provar-www.dev
+      to: /home/vagrant/elementree/provar/www
 
 databases:
     - homestead
     - provar
+    - provar-www
 #    - yousemble_api
 
 # variables:
